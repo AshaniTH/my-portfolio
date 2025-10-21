@@ -3,5 +3,16 @@
 
 @theme{
   --font-display:"Urbanist", sans-serif;
-  
+
+}
+@layer base{
+  html{
+    font-family: var(--font-display);
+    
+  }
+  body{
+    background-color: #000000;
+    overflow-x: hidden ;
+    
+  }
 }
