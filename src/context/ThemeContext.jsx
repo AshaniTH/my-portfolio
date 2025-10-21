@@ -2,7 +2,7 @@ import { createContext,useContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext();
 
-export const ThemeProvider = ({chilren})=>{
+export const ThemeProvider = ({children})=>{
     const [isDarkMode, toggleDarkMode] = useState(
         localStorage.getItem("theme")||"light");
 
@@ -22,7 +22,7 @@ export const ThemeProvider = ({chilren})=>{
 
     return(
         <ThemeContext.Provider value={{isDarkMode: isDarkMode === "dark", toggleDarkMode}}>
-            {chilren}
+            {children}
         </ThemeContext.Provider>
     );
 } ;
