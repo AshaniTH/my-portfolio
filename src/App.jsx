@@ -1,5 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from './context/ThemeContext'
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       </div>
     </ThemeProvider>
     
-  )
-}
+  );
+};
 
-export default App
+export default App;
