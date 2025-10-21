@@ -1,8 +1,16 @@
 import React from 'react'
+import { ThemeProvider } from './context/ThemeContext'
 
 const App = () => {
   return (
-    <div className='text-5xl'>App</div>
+    <ThemeProvider>
+      <div>
+        <Navbar />
+
+       
+      </div>
+    </ThemeProvider>
+    
   )
 }
 
