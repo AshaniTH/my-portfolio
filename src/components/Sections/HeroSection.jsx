@@ -81,7 +81,7 @@ const HeroSection = () => {
         <motion.section
         id="home"
         style = {{y: heroY}}
-        classname = "min-h-screen flex items-center justify-center relative px-6 pt-10"
+        className = "min-h-screen flex items-center justify-center relative px-6 pt-10"
         >
             <div className='absolute inset-0 overflow-hidden'>
                 <motion.div
@@ -175,8 +175,8 @@ const HeroSection = () => {
                     <motion.div
                     variants = {textVariants}
                     className = {`text-sm uppercase tracking-widest ${
-                        isDarkMode ? "text-gray-500 " : "text-gray-600"
-                    }mb-4`}
+                        isDarkMode ? "text-gray-500" : "text-gray-600"
+                    } mb-4`}
                     
                     >
                         Full Stack Developer
@@ -233,7 +233,7 @@ const HeroSection = () => {
                             isDarkMode
                             ? "border-gray-700 hover:border-gray-600 text-gray-300"
                             :"border-gray-300 hover:border-gray-400 text-gray-700"
-                        }px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
+                        } px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
                         >
                             Get in Touch
 
@@ -274,7 +274,7 @@ const HeroSection = () => {
                     {/*Tech Stack - Mobile*/}
                     <motion.div
                     variants = {itemVariants}
-                    className=""
+                    className="flex justify-center items-center space-x-6 text-xs uppercase tracking-widest flex-wrap"
                     >
                         <span
                         className={isDarkMode ? "text-gray-600" : "text-gray-500" }
@@ -319,11 +319,11 @@ const HeroSection = () => {
             <motion.div
             animate = {{y:[0,8,0]}}
             transition={{duration:2, repeat:Infinity}}
-            className =""
+            className ="absolute bottom-8 left-1/2 -translate-x-1/2"
             >
                 <ArrowDown
                 size ={20}
-                classname = {isDarkMode ? "text-gray-600" : "text-gray-400"}>
+                className = {isDarkMode ? "text-gray-600" : "text-gray-400"}>
 
                 </ArrowDown>
             </motion.div>
