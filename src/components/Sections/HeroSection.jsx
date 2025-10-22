@@ -427,9 +427,75 @@ const HeroSection = () => {
                     >
                         {/*Tech Stack -Desktop*/}
                         <motion.div
+                        variants={itemVariants}
+                        className=""
                         >
-                            
+                            <span
+                            className ={isDarkMode ? "text-gray-600" :"text-gray-500"}>
+                                React
+
+                            </span>
+                            <span
+                            className ={isDarkMode ? "text-gray-700" :"text-gray-400"}>
+                                .
+
+                            </span>
+                            <span
+                            className ={isDarkMode ? "text-gray-600" :"text-gray-500"}>
+                                Node.js
+
+                            </span>
+                            <span
+                            className ={isDarkMode ? "text-gray-700" :"text-gray-400"}>
+                                .
+
+                            </span>
+                            <span
+                            className ={isDarkMode ? "text-gray-600" :"text-gray-500"}>
+                               MongoDB 
+
+                            </span>
+                            <span
+                            className ={isDarkMode ? "text-gray-700" :"text-gray-400"}>
+                                .
+
+                            </span>
+                            <span
+                            className ={isDarkMode ? "text-gray-600" :"text-gray-500"}>
+                                JavaScript
+
+                            </span>
+                            <span
+                            className ={isDarkMode ? "text-gray-700" :"text-gray-400"}>
+                                .
+
+                            </span>
+                           
                         </motion.div>
+                        <motion.div
+                        whileHover = {{scale:1.02}}
+                        className={`w-80 h-96 rounded-3xl overflow-hidden border-4 ${
+                            isDarkMode ? "border-gray-800 " : "border-gray-300"
+                        }shadow-2xl`}
+                        >
+                            <img
+                            src = {PROFILE_PIC}
+                            alt="Profile"
+                            className=""
+                            />
+
+
+                        </motion.div>
+                        {/*Decorative elements*/}
+                        <motion.div
+                        animate = {{rotate:360}}
+                        transition={{
+                            duration:20,
+                            repeat: Infinity,
+                            ease: "linear",
+                        }}
+                        className=""
+                        ></motion.div>
                     </div>
 
 
