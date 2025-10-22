@@ -314,6 +314,128 @@ const HeroSection = () => {
 
                 </div>
 
+                {/* Desktop layout - Split */}
+                <div className='hidden lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center'>
+                    {/*Left Colum- Content*/}
+                    <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={containerVariants}
+                    className="text-5xl xl:text-7xl font-light mb-8 leading-tight"
+                    >
+                    <motion.div
+                    variants={textVariants}
+                    className={`text-sm uppercase tracking-widest ${
+                        isDarkMode ? "text-gray-500" : "text-gray-600"
+                    }mb-6`}
+                    >
+                        Full Stack Developer
+                    </motion.div>
+                    <motion.h1
+                    variants ={itemVariants}
+
+                    >
+                        <span
+                        className={`${isDarkMode ? "text-white" : "text-gray-900"}`}>
+                            Building digital
+                        </span>
+                        <br />
+                        <span className ="text-blue-500 font-medium">
+                            experiences
+                        </span>
+                        <br/>
+                        <span className = {isDarkMode ? "text-white" : "text-gray-900"}>
+                            that matter
+
+                        </span>
+
+                    </motion.h1>
+                    <motion.p
+                    variants = {itemVariants}
+                    className={`text-xl ${
+                        isDarkMode ? "text-gray-400" : "text-gray-600"   
+                    }mb-12 font-light leading-relaxed max-w-lg`}
+                    >
+                        I craft beautiful, functional web application with modern technologies and thoughtful user experiences.
+
+                    </motion.p>
+                    {/*Cta button desktop */}
+                    <motion.div variants = {itemVariants} className= "flex gap-6 mb-8">
+                        <motion.button
+                        whileHover={{y:-2}}
+                        whileTap = {{scale:0.98}}
+                        onClick={()=>scrollToSection("work")}
+                        className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
+                        >
+                            View Work
+                        </motion.button>
+                        <motion.button
+                        whileHover={{y:-2}}
+                        whileTap={{scale:0.98}}
+                        onClick={()=>scrollToSection("contact")}
+                        className={`border ${
+                            isDarkMode ? "border-gray-700 hover:border-gray-600 text-gray-300"
+                            :"border-gray-300 hover:border-gray-400 text-gray-700"
+
+                        }px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
+
+                        >
+                            Get in Touch
+
+                        </motion.button>
+
+                    </motion.div>
+                    {/*Social Links*/}
+                    <motion.div
+                    variants = {itemVariants}
+                    className='flex space-x-6 mb-12'
+                    >
+                        {[
+                            {icon: FiGithub, href:"#"},
+                            {icon: FiLinkedin,href:"#"},
+                            {icon: Mail, href:"#"},
+                        
+                        ].map((social,index)=>(
+                            <motion.a
+                            key={index}
+                            href={social.href}
+                            whileHover={{y: -3, scale:1.1}}
+                            className={`p-3 rounded-full transition-colors ${
+                                isDarkMode 
+                                ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                                :"text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+                            } `}
+
+                            >
+
+                            </motion.a>
+                        ))}
+
+                    </motion.div>
+
+                   </motion.div>
+
+                   {/* Right Column*/}
+                   <motion.div
+                   initial="hidden"
+                   animate="visible"
+                   variants={imageVariants}
+                   className=""
+                   >
+                    <div
+                    className=""
+                    >
+                        {/*Tech Stack -Desktop*/}
+                        <motion.div
+                        >
+                            
+                        </motion.div>
+                    </div>
+
+
+                   </motion.div>
+                </div>
+
             </div>
             {/*Scroll indicator */}
             <motion.div
