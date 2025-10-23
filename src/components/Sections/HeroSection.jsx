@@ -420,10 +420,10 @@ const HeroSection = () => {
                    initial="hidden"
                    animate="visible"
                    variants={imageVariants}
-                   className=""
+                   className="flex justify-center lg:justify-end"
                    >
                     <div
-                    className=""
+                    className="relative"
                     >
                         {/*Tech Stack -Desktop*/}
                         <motion.div
