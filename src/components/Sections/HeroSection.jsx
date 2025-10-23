@@ -496,6 +496,16 @@ const HeroSection = () => {
                         }}
                         className="absolute -inset-4 rounded-3xl border border-blue-500/20"
                         ></motion.div>
+
+                        <motion.div
+                        animate = {{rotate:-360}}
+                        transition={{
+                            duration:30,
+                            repeat: Infinity,
+                            ease: "linear",
+                        }}
+                        className="absolute -inset-8 rounded-3xl border border-blue-500/10"
+                        ></motion.div>
                     </div>
 
 
