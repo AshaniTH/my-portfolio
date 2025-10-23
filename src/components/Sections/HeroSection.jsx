@@ -481,7 +481,7 @@ const HeroSection = () => {
                             <img
                             src = {PROFILE_PIC}
                             alt="Profile"
-                            className=""
+                            className="w-full h-full object-cover"
                             />
 
 
