@@ -5,6 +5,7 @@ import {FiGithub, FiLinkedin,} from "react-icons/fi";
 import {useTheme} from "../../context/ThemeContext";
 
 import PROFILE_PIC from "../../assets/images/profile-img.jpg"
+import { containerVariants,itemVariants } from '../../utils/helper';
 
 const HeroSection = () => {
     const {isDarkMode} = useTheme();
@@ -19,28 +20,7 @@ const HeroSection = () => {
         }
     };
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.2,
-                delayChildren: 0.3,
-            },
-        },
-    };
 
-    const itemVariants = {
-        hidden: { y: 30, opacity: 0 },
-        visible: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.8,
-                ease: "easeOut",
-            },
-        },
-    };
 
     const textVariants = {
         hidden: { y: 20, opacity: 0 },
