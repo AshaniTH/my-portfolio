@@ -494,7 +494,7 @@ const HeroSection = () => {
                             repeat: Infinity,
                             ease: "linear",
                         }}
-                        className=""
+                        className="absolute -inset-4 rounded-3xl border border-blue-500/20"
                         ></motion.div>
                     </div>
 
