@@ -428,7 +428,7 @@ const HeroSection = () => {
                         {/*Tech Stack -Desktop*/}
                         <motion.div
                         variants={itemVariants}
-                        className=""
+                        className="flex items-center space-x-8 text-xs uppercase tracking-widest absolute -top-16 -left-20 "
                         >
                             <span
                             className ={isDarkMode ? "text-gray-600" :"text-gray-500"}>
