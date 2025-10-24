@@ -1,23 +1,26 @@
-import{
+import {
     Code2,
     GraduationCap,
     Briefcase,
     Award,
-    Rocket,Heart,
+    Rocket,
+    Heart,
     Coffee,
     BookOpen,
     Zap,
     Database,
-    Server,Cloud,
+    Server,
+    Cloud,
     Mail,
     MapPin,
     Phone,
-}from"lucide-react";
+    Wrench,
+} from "lucide-react";
 
-import{FiGithub,FiLinkedin,FiTwitter}from"react-icons/fi";
+import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 //import project images 
-import PROJECT_IMG_1 from"../assets/images/project-1.png";
+import PROJECT_IMG_1 from "../assets/images/project-1.png";
 
 export const SKILLS_CATEGORY =[
     {
@@ -76,7 +79,7 @@ export const SKILLS_CATEGORY =[
 
 ];
 
-export const Tech_Stack =[
+export const TECH_STACK =[
     "React",
     "JavaScript",
     "Tailwind CSS",
