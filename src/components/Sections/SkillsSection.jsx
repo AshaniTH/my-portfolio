@@ -95,6 +95,25 @@ const SkillsSection = () => {
         </motion.p>
 
       </motion.div>
+      {/*skills grid*/}
+      <motion.div
+      initial= "hidden"
+      animate = {isInView ? "visible" : "hidden"}
+      variants = {containerVariants}
+      className=""
+      >
+        {SKILLS_CATEGORY.map((category, categoryIndex) =>(
+          <motion.div 
+          key={category.title}
+          variants={itemVariants}
+          className={`p-8 rounded-2xl border ${
+            isDarkMode ? "bg-gray-900/50 border-gray-800 backdrop-blur-sm "
+            :"bg-white/80 border-gray-200 backdrop-blur-sm"
+          }`}>
+          </motion.div>
+        ))}
+
+      </motion.div>
 
     </section>
   )
