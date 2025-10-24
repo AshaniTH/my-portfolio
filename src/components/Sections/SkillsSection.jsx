@@ -110,6 +110,25 @@ const SkillsSection = () => {
             isDarkMode ? "bg-gray-900/50 border-gray-800 backdrop-blur-sm "
             :"bg-white/80 border-gray-200 backdrop-blur-sm"
           }`}>
+
+            {/*catogory header*/}
+            <div className=''>
+              <div
+              className={`p-3 rounded-xl ${
+                isDarkMode ? "bg-gray-800" : "bg-gray-100"
+              }mr-4`}
+              >
+                <category.icon size={24} className="" />
+              </div>
+              <div>
+                <h3 className = "">
+                  {category.title}
+                </h3>
+              </div>
+
+            </div>
+
+
           </motion.div>
         ))}
 
