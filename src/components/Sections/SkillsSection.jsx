@@ -64,7 +64,7 @@ const SkillsSection = () => {
       initial = "hidden"
       animate = {isInView ? "visible" : "hidden"}
       variants={containerVariants}
-      className=''
+      className='text-center mb-20'
       >
         <motion.div
         variants={itemVariants}
@@ -77,10 +77,10 @@ const SkillsSection = () => {
         </motion.div>
         <motion.h2
         variants={itemVariants}
-        className=''
+        className='text-3xl md:text-5xl font-light mb-6'
         >
           Skills &
-          <span className= "">Technologies</span>
+          <span className= "text-blue-500 font-medium">Technologies</span>
         </motion.h2>
 
         <motion.p
@@ -90,7 +90,7 @@ const SkillsSection = () => {
         }max-w-2xl mx-auto font-light`}
         >
           A comprehensive toolkit for building modern, scalable web applications from concept to deployement.
-          
+
 
         </motion.p>
 
