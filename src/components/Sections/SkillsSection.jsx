@@ -20,7 +20,7 @@ const SkillsSection = () => {
 
   const skillBarVariants = {
     hidden: {width:0, opacity:0},
-    vissible: (level) =>({
+    visible: (level) =>({
       width:`${level}%`,
       opacity:1,
       transition:{
@@ -38,11 +38,11 @@ const SkillsSection = () => {
     id="skills"
     className={`py-24 px-6 ${
       isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"
-    }relative overflow-hidden`}
+    } relative overflow-hidden`}
 
     >
       {/*background elements*/}
-      <motion.div style={{y}} className=''>
+      <motion.div style={{y}} className='absolute inset-0 overflow-hidden'>
         <div
         className={`absolute top-40 right-1/4 w-72 h-72 rounded-full blur-3xl opacity-5 ${
           isDarkMode ? "bg-blue-500 " : "bg-blue-400"
