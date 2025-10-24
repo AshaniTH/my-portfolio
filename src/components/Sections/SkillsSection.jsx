@@ -141,7 +141,34 @@ const SkillsSection = () => {
                 >
                   <div className=''>
                     <span className=''>{skill.name}</span>
+                    <span
+                    className={`text-xs ${
+                      isDarkMode ? "text-gray-500" : "text-gray-600"
+                    }`}
+                    >
+                      {skill.level}%
+
+                    </span>
                   </div>
+                  <div
+                  className={`h-2 rounded-full overflow-hidden ${
+                    isDarkMode ? "bg-gray-800" : "bg-gray-200"
+                  }`}
+                  >
+                    <motion.div
+                    variants={skillBarVariants}
+                    initial="hidden"
+                    animate= {isInView ? "visible" : "hidden"}
+                    custom= {skill.level}
+                    className={`h-full ${skill.color} rounded-full relative`}
+                    >
+                      <div className=''>
+
+                      </div>
+
+                    </motion.div>
+
+                    </div>
 
                 </div>
               ))}
