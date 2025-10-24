@@ -35,8 +35,29 @@ const SkillsSection = () => {
   return (
     <section
     ref={sectionRef}
-    
+    id="skills"
+    className={`py-24 px-6 ${
+      isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"
+    }relative overflow-hidden`}
+
     >
+      {/*background elements*/}
+      <motion.div style={{y}} className=''>
+        <div
+        className={`absolute top-40 right-1/4 w-72 h-72 rounded-full blur-3xl opacity-5 ${
+          isDarkMode ? "bg-blue-500 " : "bg-blue-400"
+        } `}></div>
+
+        <div
+        className = {`absolute bottom-40 left-1/4 w-64 h-64 rounded-full blur-3xl opacity-5 ${
+          isDarkMode ? "bg-purple-500" : "bg-purple-400"
+        } `}
+        >
+
+        </div>
+
+      </motion.div>
+      <div className=''></div>
 
     </section>
   )
