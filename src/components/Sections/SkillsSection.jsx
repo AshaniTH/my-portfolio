@@ -57,7 +57,44 @@ const SkillsSection = () => {
         </div>
 
       </motion.div>
-      <div className=''></div>
+      <div className='max-w-6xl mx-auto relative z-10'></div>
+
+      {/*section header*/}
+      <motion.div
+      initial = "hidden"
+      animate = {isInView ? "visible" : "hidden"}
+      variants={containerVariants}
+      className=''
+      >
+        <motion.div
+        variants={itemVariants}
+        className={`text-sm uppercase tracking-widest ${
+          isDarkMode ? "text-gray-500" : "text-gray-600"
+        }mb-4`}
+        >
+          Technical Expertise
+
+        </motion.div>
+        <motion.h2
+        variants={itemVariants}
+        className=''
+        >
+          Skills &
+          <span className= "">Technologies</span>
+        </motion.h2>
+
+        <motion.p
+        variants = {itemVariants}
+        className = {`text-lg ${
+          isDarkMode ? "text-gray-400" : "text-gray-600"
+        }max-w-2xl mx-auto font-light`}
+        >
+          A comprehensive toolkit for building modern, scalable web applications from concept to deployement.
+          
+
+        </motion.p>
+
+      </motion.div>
 
     </section>
   )
