@@ -5,6 +5,7 @@ import {motion,useInView,useScroll,useTransform} from "framer-motion";
 import {useTheme} from "../../context/ThemeContext";
 import {SKILLS_CATEGORY, STATS, TECH_STACK} from "../../utils/data";
 import {containerVariants, itemVariants} from "../../utils/helper";
+import { div } from 'framer-motion/client';
 
 const SkillsSection = () => {
   const {isDarkMode} = useTheme();
@@ -133,6 +134,19 @@ const SkillsSection = () => {
               </div>
 
             </div>
+            {/*skills list*/}
+            <div className=''>
+              {category.skills.map((skill,skillIndex)=>(
+                <div key={skill.name} className=''
+                >
+                  <div className=''>
+                    <span className=''>{skill.name}</span>
+                  </div>
+
+                </div>
+              ))}
+            </div>
+
 
 
           </motion.div>
