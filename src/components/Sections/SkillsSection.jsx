@@ -180,6 +180,21 @@ const SkillsSection = () => {
         ))}
 
       </motion.div>
+      {/*Additional Skills */}
+      <motion.div
+      initial = "hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={containerVariants}
+      className='' 
+      >
+        <motion.div
+        variants = {itemVariants} className=''
+        >
+          <h3 className=''>Also Work With</h3>
+
+        </motion.div>
+
+      </motion.div>
 
     </section>
   )
