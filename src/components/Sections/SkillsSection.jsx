@@ -122,7 +122,7 @@ const SkillsSection = () => {
                 <category.icon size={24} className="" />
               </div>
               <div>
-                <h3 className = "">
+                <h3 className = "text-xl font-medium mb-1">
                   {category.title}
                 </h3>
                 <p
