@@ -213,6 +213,39 @@ const SkillsSection = () => {
 
         </motion.div>
 
+        {/*Stats*/}
+        <motion.div
+        initial = "hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={containerVariants}
+        className=""
+        >
+          {STATS.map((stat, index)=>{
+            <motion.div
+            key={stat.label}
+            variants={itemVariants}
+            className=""
+            >
+              <div className=''>
+                {stat.number}
+
+
+              </div>
+              <div
+              className={`text-sm ${
+                isDarkMode ? "text-gray-400" : "text-gray-600"
+
+              }`}
+              >
+                {stat.label}
+
+              </div>
+            </motion.div>
+
+          })}
+
+        </motion.div>
+
       </motion.div>
 
     </section>
