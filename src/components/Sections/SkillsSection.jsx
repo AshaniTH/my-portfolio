@@ -5,7 +5,6 @@ import {motion,useInView,useScroll,useTransform} from "framer-motion";
 import {useTheme} from "../../context/ThemeContext";
 import {SKILLS_CATEGORY, STATS, TECH_STACK} from "../../utils/data";
 import {containerVariants, itemVariants} from "../../utils/helper";
-import { div } from 'framer-motion/client';
 
 const SkillsSection = () => {
   const {isDarkMode} = useTheme();
@@ -46,13 +45,13 @@ const SkillsSection = () => {
       <motion.div style={{y}} className='absolute inset-0 overflow-hidden'>
         <div
         className={`absolute top-40 right-1/4 w-72 h-72 rounded-full blur-3xl opacity-5 ${
-          isDarkMode ? "bg-blue-500 " : "bg-blue-400"
-        } `}></div>
+          isDarkMode ? "bg-blue-500" : "bg-blue-400"
+        }`}></div>
 
         <div
         className = {`absolute bottom-40 left-1/4 w-64 h-64 rounded-full blur-3xl opacity-5 ${
           isDarkMode ? "bg-purple-500" : "bg-purple-400"
-        } `}
+        }`}
         >
 
         </div>
@@ -71,7 +70,7 @@ const SkillsSection = () => {
         variants={itemVariants}
         className={`text-sm uppercase tracking-widest ${
           isDarkMode ? "text-gray-500" : "text-gray-600"
-        }mb-4`}
+        } mb-4`}
         >
           Technical Expertise
 
@@ -113,7 +112,7 @@ const SkillsSection = () => {
           }`}>
 
             {/*catogory header*/}
-            <div className='flex item-center mb-6'>
+            <div className='flex items-center mb-6'>
               <div
               className={`p-3 rounded-xl ${
                 isDarkMode ? "bg-gray-800" : "bg-gray-100"
@@ -185,17 +184,17 @@ const SkillsSection = () => {
       initial = "hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={containerVariants}
-      className='' 
+      className='mt-16' 
       >
         <motion.div
-        variants = {itemVariants} className=''
+        variants = {itemVariants} className='text-center mb-8'
         >
-          <h3 className=''>Also Working With</h3>
+          <h3 className='text-xl font-medium mb-4'>Also Working With</h3>
 
         </motion.div>
         <motion.div
         variants = {itemVariants}
-        className = ""
+        className = "flex flex-wrap justify-center gap-3"
         >
           {TECH_STACK.map((tech,index)=>(
             <motion.span
@@ -207,6 +206,7 @@ const SkillsSection = () => {
               : "bg-white border-gray-300 text-gray-700 hover:border-gray-400"
             }`}
             >
+              {tech}
 
             </motion.span>
           ))}
