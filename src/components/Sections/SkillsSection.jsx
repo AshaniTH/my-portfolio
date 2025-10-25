@@ -101,7 +101,7 @@ const SkillsSection = () => {
       initial= "hidden"
       animate = {isInView ? "visible" : "hidden"}
       variants = {containerVariants}
-      className=""
+      className="grid md:grid-cols-2 gap-8 lg:gap-12"
       >
         {SKILLS_CATEGORY.map((category, categoryIndex) =>(
           <motion.div 
