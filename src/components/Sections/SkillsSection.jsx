@@ -162,7 +162,7 @@ const SkillsSection = () => {
                     custom= {skill.level}
                     className={`h-full ${skill.color} rounded-full relative`}
                     >
-                      <div className=''>
+                      <div className='absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
 
                       </div>
 
