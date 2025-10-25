@@ -113,7 +113,7 @@ const SkillsSection = () => {
           }`}>
 
             {/*catogory header*/}
-            <div className=''>
+            <div className='flex item-center mb-6'>
               <div
               className={`p-3 rounded-xl ${
                 isDarkMode ? "bg-gray-800" : "bg-gray-100"
