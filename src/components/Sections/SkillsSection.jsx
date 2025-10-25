@@ -218,15 +218,15 @@ const SkillsSection = () => {
         initial = "hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
-        className=""
+        className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           {STATS.map((stat, index)=>{
             <motion.div
             key={stat.label}
             variants={itemVariants}
-            className=""
+            className="text-center"
             >
-              <div className=''>
+              <div className='text-2xl md:text-3xl font-light text-blue-500 mb-2'>
                 {stat.number}
 
 
