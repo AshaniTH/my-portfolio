@@ -140,7 +140,7 @@ const SkillsSection = () => {
                 <div key={skill.name} className='group'
                 >
                   <div className='flex justify-between items-center mb-2'>
-                    <span className=''>{skill.name}</span>
+                    <span className='text-sm font-medium'>{skill.name}</span>
                     <span
                     className={`text-xs ${
                       isDarkMode ? "text-gray-500" : "text-gray-600"
