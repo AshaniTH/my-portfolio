@@ -135,11 +135,11 @@ const SkillsSection = () => {
 
             </div>
             {/*skills list*/}
-            <div className=''>
+            <div className='space-y-4'>
               {category.skills.map((skill,skillIndex)=>(
-                <div key={skill.name} className=''
+                <div key={skill.name} className='group'
                 >
-                  <div className=''>
+                  <div className='flex justify-between items-center mb-2'>
                     <span className=''>{skill.name}</span>
                     <span
                     className={`text-xs ${
