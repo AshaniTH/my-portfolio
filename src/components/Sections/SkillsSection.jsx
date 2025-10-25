@@ -190,7 +190,26 @@ const SkillsSection = () => {
         <motion.div
         variants = {itemVariants} className=''
         >
-          <h3 className=''>Also Work With</h3>
+          <h3 className=''>Also Working With</h3>
+
+        </motion.div>
+        <motion.div
+        variants = {itemVariants}
+        className = ""
+        >
+          {TECH_STACK.map((tech,index)=>(
+            <motion.span
+            key={tech}
+            whileHover={{y: -2, scale:1.05}}
+            className={`px-4 py-2 text-sm rounded-full border transition-all duration-300 ${
+              isDarkMode
+              ? "bg-gray-900 border-gray-700 text-gray-300 hover:border-gray-600" 
+              : "bg-white border-gray-300 text-gray-700 hover:border-gray-400"
+            }`}
+            >
+
+            </motion.span>
+          ))}
 
         </motion.div>
 
