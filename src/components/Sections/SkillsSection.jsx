@@ -220,7 +220,7 @@ const SkillsSection = () => {
         variants={containerVariants}
         className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8"
         >
-          {STATS.map((stat, index)=>{
+          {STATS.map((stat, index)=> (
             <motion.div
             key={stat.label}
             variants={itemVariants}
@@ -242,7 +242,7 @@ const SkillsSection = () => {
               </div>
             </motion.div>
 
-          })}
+          ))}
 
         </motion.div>
 
