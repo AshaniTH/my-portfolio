@@ -7,7 +7,7 @@ import { useTheme } from '../../context/ThemeContext';
 import { PROJECTS } from '../../utils/data';
 import ProjectCard from '../ProjectCard';
 import { containerVariants, itemVariants }  from '../../utils/helper';
-import { div } from 'framer-motion/client';
+// removed unused import
 
 
 const ProjectSection = () => {
@@ -19,8 +19,8 @@ const ProjectSection = () => {
     id= "work"
     ref={sectionRef}
     className={`py-24 px-6 ${
-        isDarkMode ? "bg-gray-950 text-white" :"bg-gray-50 text-gray-900"
-    }relative overflow-hidden`}
+        isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"
+    } relative overflow-hidden`}
     >
         {/*background elements*/}
         <div
@@ -47,8 +47,8 @@ const ProjectSection = () => {
             <motion.div
             variants={itemVariants}
             className={`text-sm uppercase tracking-widest ${
-                isDarkMode ? "text-gray-500" :"text-gray-600"
-            }mb-4`}
+                isDarkMode ? "text-gray-500" : "text-gray-600"
+            } mb-4`}
             >
                 Featured Work
 
@@ -57,7 +57,7 @@ const ProjectSection = () => {
             variants={itemVariants}
             className='text-3xl md:text-5xl font-light mb-6'
             >
-                Recent 
+                Recent{' '}
                 <span
                 className= "text-blue-500 font-medium"
                 >
@@ -69,7 +69,7 @@ const ProjectSection = () => {
             variants = {itemVariants}
             className={`text-lg ${
                 isDarkMode ? "text-gray-400" : "text-gray-600"
-            }max-w-2xl mx-auto font-light`}
+            } max-w-2xl mx-auto font-light`}
             >
                 A collection of projects that showcase my expertise in building modern web applications and solving complex problems.
 
