@@ -88,7 +88,7 @@ const AboutSection = () => {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
-            className=""
+            className="text-center mb-20"
 
 >
     <motion.div
@@ -102,10 +102,10 @@ const AboutSection = () => {
     </motion.div>
     <motion.h2
         variants= {itemVariants}
-        className =""
+        className ="text-3xl md:text-5xl font-light mb-6"
         >
             About{' '}
-            <span className=''>
+            <span className='text-blue-500 font-medium'>
                 Me
 
             </span>
@@ -113,6 +113,47 @@ const AboutSection = () => {
     </motion.h2>
 
             </motion.div>
+
+            <div className="">
+                {/*personal Story*/}
+                <motion.div
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                variants={containerVariants}
+                className=''
+                >
+                    <motion.div
+                    variants = {itemVariants}
+                    className={`p-8 rounded-2xl border ${
+                        isDarkMode ? "bg-gray-800/50 border-gray-700 backdrop-blur-sm"
+                        :"bg-gray-50/80 border-gray-200 backdrop-blur-sm"
+                    }`}
+                    >
+                        <h3 className="">
+                            My Mission
+                        </h3>
+                        <p
+                        className={`text-lg leading-relaxed mb-6 ${
+                            isDarkMode ? "text-gray-300" : "text-gray-700"
+                        }`}
+                        >
+
+                            I believe technology should be a bridge that connects people and solves real-world problems. My passion lies in crafting digital experiences that are not just functional, but delightful and accessible to everyone.
+                        </p>
+                        <p className={`text-base leading-relaxed ${
+                            isDarkMode ? "text-gray-400" : "text-gray-600"
+                        }`}>
+                            When I'm not coding, you'll find me exploring new frameworks, contributing to open source, or mentoring aspiring developers. I love the constant evolution of web technologies and the endless possibilities they bring to create meaningful digital experiences.
+
+                        </p>
+
+                    </motion.div>
+                    {/*when i love building*/}
+                    
+
+                </motion.div>
+
+            </div>
 
         </div>
 
