@@ -34,9 +34,35 @@ const ProjectCard = ({project, index, isDarkMode}) => {
       >
         {/* Project Image */}
         <div className=''>
-        <img src={project.image} alt={project.title} className='w-full h-full object-cover' />
+        <img src={project.image} alt={project.title} 
+        className='' />
+
+        {/*Featured badge*/}
+        {project.featured && (
+          <div className="">
+            <span className=''>
+              Featured
+
+            </span>
+
+          </div>
+        )}
+        {/*Category Badge*/}
+        <div className=''>
+          <span
+          className={`text-xs px-3 py-1 rounded-full font-medium ${
+            isDarkMode
+            ? "bg-gray-800/80 text-gray-300"
+            :"bg-white/80 text-gray-700"
+          } backdrop-blur-sm`}
+          >
+            {project.category}
+            
+
+          </span>
         </div>
-        
+        </div>
+
 
       </div>
 
