@@ -23,7 +23,7 @@ const ProjectCard = ({project, index, isDarkMode}) => {
       y:-8,
       transition:{duration:0.3, ease:"easeOut"},
     }}
-    className=""
+    className="group relative"
     >
       <div
       className={`rounded-2xl overflow-hidden border transition-all duration-500 ${
@@ -32,6 +32,11 @@ const ProjectCard = ({project, index, isDarkMode}) => {
         : "bg-white/80 border-gray-200 hover:border-gray-300 hover:shadow-2xl hover:shadow-blue-500/10"
       }backdrop-blur-sm`}
       >
+        {/* Project Image */}
+        <div className=''>
+        <img src={project.image} alt={project.title} className='w-full h-full object-cover' />
+        </div>
+        
 
       </div>
 
