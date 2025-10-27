@@ -7,7 +7,7 @@ import { useTheme } from '../../context/ThemeContext';
 import { PROJECTS } from '../../utils/data';
 import ProjectCard from '../ProjectCard';
 import { containerVariants, itemVariants }  from '../../utils/helper';
-// removed unused import
+
 
 
 const ProjectSection = () => {
