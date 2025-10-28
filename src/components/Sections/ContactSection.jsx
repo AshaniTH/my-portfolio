@@ -6,6 +6,7 @@ import { Send } from 'lucide-react'
 import { CONTACT_INFO, SOCIAL_LINKS } from '../../utils/data'
 import { containerVariants,itemVariants } from '../../utils/helper'
 import TextInput from '../Inputs/TextInput'
+import SuccessModel from '../SuccessModel'
 
 
 const ContactSection = () => {
@@ -44,7 +45,7 @@ const ContactSection = () => {
         setFormData({name:"", email:"", message:""});
 
         //Auto hide success model after 3 seconds
-        setTimeout(() => setShowScuccess(false), 3000);
+        setTimeout(() => setShowSuccess(false), 3000);
 
     };
 
@@ -83,7 +84,7 @@ const ContactSection = () => {
                 variants={itemVariants}
                 className={`text-sm uppercase tracking-widest ${
                     isDarkMode ? "text-gray-500" : "text-gray-600"
-                }mb-4`}
+                } mb-4`}
                 >
                     Let's Connect
 
@@ -155,7 +156,7 @@ const ContactSection = () => {
                                 disabled={isSubmitting}
                                 whileHover={{y:-2 , scale:1.02}}
                                 whileTap={{scale:0.98}}
-                                className="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 text-while py-4 rounded-xl text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center justify-center space-x-2 "
+                                className="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 text-white py-4 rounded-xl text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center justify-center space-x-2 "
                                 onClick={handleSubmit}
 
                                 >
@@ -202,7 +203,7 @@ const ContactSection = () => {
 
         </div>
         <SuccessModel
-        showSuccess={showSuccess} setShowScuccess={setShowSuccess} isDarkMode={isDarkMode}
+        showSuccess={true} setShowSuccess={setShowSuccess} isDarkMode={isDarkMode}
         />
 
     </section>
