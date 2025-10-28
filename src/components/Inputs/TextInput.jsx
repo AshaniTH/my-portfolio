@@ -15,7 +15,9 @@ const TextInput = ({ isDarkMode, value, handleInputChange, textarea, label }) =>
         value = {value}
         onChange ={({target})=> handleInputChange(target.value)}
         />
-        <label className='text-sm absolute left-4 top-2 pointer-events-none origin-left '>
+        <label className={`text-sm absolute left-4 top-2 pointer-events-none origin-left transition-colors duration-300 ${
+            isDarkMode ? "text-gray-400" : "text-gray-600"
+        }`}>
             {label}
         </label>
 
