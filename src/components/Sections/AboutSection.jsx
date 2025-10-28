@@ -247,14 +247,14 @@ const AboutSection = () => {
 
                                 {/*Time line dot*/}
                                 <div
-                                className={`relative z-10 flex-shrink-0 w-16 h-16 rounded-full ${step.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
+                                className={`relative z-10 shrink-0 w-16 h-16 rounded-full ${step.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
                                 >
                                     <step.icon size={24} className='text-white'/>
 
                                 </div>
                                 {/*content*/}
                                 <div
-                                className={`flex-grow p-6 rounded-xl border transition-all duration-300 ${
+                                className={`grow p-6 rounded-xl border transition-all duration-300 ${
                                     isDarkMode ? "bg-gray-800/50 border-gray-700 group-hover:border-gray-600 group-hover:bg-gray-800/70"
                                     :"bg-white/80 border-gray-200 group-hover:border-gray-300 group-hover:bg-white"
                                 } backdrop-blur-sm`}
