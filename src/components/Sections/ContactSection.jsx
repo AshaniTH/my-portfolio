@@ -33,7 +33,20 @@ const ContactSection = () => {
 
         });
     };
-    const handleSubmit = async(e) => {};
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        //Simulate API call
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        setIsSubmitting(false);
+        setShowSuccess(true);
+        setFormData({name:"", email:"", message:""});
+
+        //Auto hide success model after 3 seconds
+        setTimeout(() => setShowScuccess(false), 3000);
+
+    };
 
   return (
     <section
@@ -188,6 +201,9 @@ const ContactSection = () => {
             </div>
 
         </div>
+        <SuccessModel
+        showSuccess={showSuccess} setShowScuccess={setShowSuccess} isDarkMode={isDarkMode}
+        />
 
     </section>
 
