@@ -11,7 +11,7 @@ const SuccessModel = ({showSuccess, setShowSuccess, isDarkMode})  => {
         initial={{opacity:0}}
         animate={{opacity:1}}
         exit={{opacity:0}}
-        className=''
+        className='fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm'
         onClick={() => setShowSuccess(false)}
         >
           <motion.div
@@ -39,9 +39,9 @@ const SuccessModel = ({showSuccess, setShowSuccess, isDarkMode})  => {
             initial={{scale:0}}
             animate={{scale:1}}
             transition={{delay:0.2, type:'spring'}}
-            className=''
+            className='max-auto w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-6'
             >
-              <CheckCircle size={32} className=""/>
+              <CheckCircle size={32} className="text-white"/>
 
 
             </motion.div>
@@ -49,7 +49,7 @@ const SuccessModel = ({showSuccess, setShowSuccess, isDarkMode})  => {
             initial={{opacity:0, y:10}}
             animate={{opacity:1, y:0}}
             transition={{delay:0.3}}
-            className=""
+            className="text-2xl font-medium mb-2"
             >
               Message Sent!
 
@@ -69,10 +69,10 @@ const SuccessModel = ({showSuccess, setShowSuccess, isDarkMode})  => {
              initial={{opacity:0, y:10}}
             animate={{opacity:1, y:0}}
             transition={{delay:0.5}}
-            className=""
+            className="flex justify-center"
             >
-              <Sparkles className="" size={24}/>
-              
+              <Sparkles className="text-yellow-500" size={24}/>
+
 
             </motion.div>
 
