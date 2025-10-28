@@ -246,7 +246,7 @@ export const SOCIAL_LINKS = [
 
 ];
 
-export const CONTACT_iNFO = [
+export const CONTACT_INFO = [
     {
         icon:MapPin,
         label:"Location",
@@ -260,7 +260,7 @@ export const CONTACT_iNFO = [
     },
     {
         icon:Phone,
-        lable:"Phone",
+        label:"Phone",
         value:"+94 76 7064692",
     },
 ];
