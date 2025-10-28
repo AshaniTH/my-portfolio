@@ -5,6 +5,7 @@ import { useTheme } from '../../context/ThemeContext'
 import { Send } from 'lucide-react'
 import { CONTACT_INFO, SOCIAL_LINKS } from '../../utils/data'
 import { containerVariants,itemVariants } from '../../utils/helper'
+import TextInput from '../Inputs/TextInput'
 
 
 const ContactSection = () => {
@@ -93,6 +94,98 @@ const ContactSection = () => {
                 </motion.p>
 
             </motion.div>
+            <div className='grid lg:grid-cols-2 gap-16 items-start'>
+                {/*contact form*/}
+                <motion.div
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                variants={containerVariants}
+                >
+                    <motion.div
+                    variants={itemVariants}
+                    className={`p-8 rounded-2xl border ${
+                        isDarkMode
+                        ? "bg-gray-800/50 border-gray-700 backdrop-blur-sm " 
+                        :"bg-gray-50/80 border-gray-200 backdrop-blur-sm"
+                    }`}
+                    >
+                        <h3 className="text-2xl font-medium mb-8"> Send me a message
+
+                        </h3>
+                        <div className='space-y-6'>
+                            <div className='grid md:grid-cols-2 gap-6'>
+                                <TextInput 
+                                isDarkMode = {isDarkMode}
+                                value= {formData.name}
+                                handleInputChange={(text) =>
+                                    handleInputChange("name", text)
+                                }
+                                label="Your Name"
+                                />
+                                <TextInput 
+                                isDarkMode = {isDarkMode}
+                                value= {formData.email}
+                                handleInputChange={(text) =>
+                                    handleInputChange("email", text)
+                                }
+                                label="Email Address"
+                                />
+                                <TextInput 
+                                isDarkMode = {isDarkMode}
+                                value= {formData.message}
+                                handleInputChange={(text) =>
+                                    handleInputChange("message", text)
+                                }
+                                label="Your Message"
+                                />
+                                <motion.button
+                                disabled={isSubmitting}
+                                whileHover={{y:-2 , scale:1.02}}
+                                whileTap={{scale:0.98}}
+                                className="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 text-while py-4 rounded-xl text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center justify-center space-x-2 "
+                                onClick={handleSubmit}
+
+                                >
+                                    {isSubmitting ? (
+                                        <>
+                                        <motion.div
+                                        animate={{ rotate:360}}
+                                        transition={{
+                                            duration:1,
+                                            repeat: Infinity,
+                                            ease: "linear"
+                                        }}
+                                        className='w-4 h-4 border-2 border-white border-t-transparent rounded-full'
+                                        >
+
+                                        </motion.div>
+                                        <span>
+                                            Sending...
+                                        </span>
+                                        </>
+
+                                    ):(
+                                        <>
+                                        <Send size={18} />
+                                        <span>
+                                            Send Message
+                                        </span>
+                                        </>
+                                    )}
+
+                                </motion.button>
+
+
+                                
+
+                            </div>
+
+                        </div>
+
+                    </motion.div>
+
+                </motion.div>
+            </div>
 
         </div>
 
