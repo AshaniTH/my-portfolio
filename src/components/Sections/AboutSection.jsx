@@ -114,13 +114,13 @@ const AboutSection = () => {
 
             </motion.div>
 
-            <div className="">
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
                 {/*personal Story*/}
                 <motion.div
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={containerVariants}
-                className=''
+                className='space-y-8'
                 >
                     <motion.div
                     variants = {itemVariants}
@@ -129,7 +129,7 @@ const AboutSection = () => {
                         :"bg-gray-50/80 border-gray-200 backdrop-blur-sm"
                     }`}
                     >
-                        <h3 className="">
+                        <h3 className="text-2xl font-medium mb-6">
                             My Mission
                         </h3>
                         <p
@@ -149,7 +149,50 @@ const AboutSection = () => {
 
                     </motion.div>
                     {/*when i love building*/}
-                    
+                    <motion.div
+                    variants={itemVariants} className="space-y-4"
+                    >
+                        <h3 className='text-xl font-medium mb-6'>
+                            What I Love Building
+                        </h3>
+                        <div className='grid gap-4'>
+                            {PASSIONS.map((passion, index) =>(
+                                <motion.div
+                                key={passion.title}
+                                variants={itemVariants}
+                                whileHover={{x:4}}
+                                className={`flex items-center space-x-4 p-4 rounded-xl ${
+                                    isDarkMode? "bg-gray-800/3 hover:bg-gray-800/50"
+                                    :"bg-gray-50/50 hover:bg-gray-100/50"
+
+                                } transition-all duration-300`}
+                                >
+                                    <div
+                                    className={`p-3 rounded-lg ${
+                                        isDarkMode ? "bg-gray-700" : "bg-white"
+                                    }`}
+                                    >
+                                        <passion.icon size={20} className='' />
+
+                                    </div>
+                                    <div>
+                                        <h4 className='font-medium mb-1'>
+                                            {passion.title}
+                                        </h4>
+                                        <p
+                                        className={`text-sm ${
+                                            isDarkMode ? "text-gray-400" : "text-gray-600"
+                                        }`}>
+
+                                            {passion.description}
+                                        </p>
+                                    </div>
+                                </motion.div>
+                            ))}
+
+                        </div>
+
+                    </motion.div>
 
                 </motion.div>
 
