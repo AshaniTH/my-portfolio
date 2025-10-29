@@ -198,6 +198,34 @@ className='absolute inset-0 overflow-hidden pointer-events-none'
   Built with React and Framer Motion.
 </p>
 </motion.div>
+{/*Back to top button*/}
+<motion.div
+variants={itemVariants}
+
+>
+  <motion.button
+    onClick={scrollToTop}
+    className={`inline-flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+      isDarkMode ? "bg-gray-800/50 hover:bg-gray-700/50 text-gray-400 hover:text-white"
+      : "bg-gray-100/50 hover:bg-gray-200/50 text-gray-600 hover:text-gray-900 "
+    } backdrop-blur-sm border ${isDarkMode ? "border-gray-700" : "border-gray-300"}`}
+    whileHover={{
+      y:-2,
+      scale:1.05,
+      boxShadow: isDarkMode
+      ? "0 10px 25px rgba(59, 130, 246, 0.15)"
+      : "0 10px 25px rgba(59,130,246,0.1)"
+
+    }}
+    whileTap={{scale:0.95}}
+    >
+      <ArrowUp size={16}/>
+      <span>Back to Top</span>
+
+    </motion.button>
+  
+
+</motion.div>
     </motion.div>
   </div>
 </div>
