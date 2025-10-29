@@ -184,9 +184,20 @@ className='absolute inset-0 overflow-hidden pointer-events-none'
         <div className={`h-px w-16 ${isDarkMode ? 'bg-gray-700' : 'bg-gray-300'}`}>
 
         </div>
+       
 
       </motion.div>
+{/*copyright and back to top*/}
+<motion.div variants={itemVariants} className=''>
+  <p className= {`text-sm ${isDarkMode ? 'text-gray-500': 'text-gray-600'}`}>
 
+ © {new Date().getFullYear()} Ashani Tharukshi. All rights reserved.
+  </p>
+<p className={`text-xs ${isDarkMode ? 'text-gray-600' : "text-gray-500"}`}>
+
+  Built with React and Framer Motion.
+</p>
+</motion.div>
     </motion.div>
   </div>
 </div>
