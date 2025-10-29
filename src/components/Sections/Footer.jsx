@@ -169,8 +169,21 @@ className='absolute inset-0 overflow-hidden pointer-events-none'
       {/*Divider*/}
       <motion.div
       variants={itemVariants}
+      className=""
       
       >
+        <div className={`h-px w-16${isDarkMode ? 'bg-gray-700':'bg-gray-300'}`}></div>
+        <motion.div 
+        animate={{scale:[1,1.2,1]}}
+        transition={{duration:2,repeat:Infinity}}
+        className=''
+        >
+          <Heart size={16} fill="currentColor"/>
+
+        </motion.div>
+        <div className={`h-px w-16 ${isDarkMode ? 'bg-gray-700' : 'bg-gray-300'}`}>
+
+        </div>
 
       </motion.div>
 
