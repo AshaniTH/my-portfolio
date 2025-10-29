@@ -188,7 +188,7 @@ className='absolute inset-0 overflow-hidden pointer-events-none'
 
       </motion.div>
 {/*copyright and back to top*/}
-<motion.div variants={itemVariants} className=''>
+<motion.div variants={itemVariants} className='space-y-2'>
   <p className= {`text-sm ${isDarkMode ? 'text-gray-500': 'text-gray-600'}`}>
 
  © {new Date().getFullYear()} Ashani Tharukshi. All rights reserved.
