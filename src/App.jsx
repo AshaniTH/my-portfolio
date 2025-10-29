@@ -11,7 +11,7 @@ import Footer from './components/Sections/Footer';
 const App = () => {
   return (
     <ThemeProvider>
-      <div className = "pb-[100vh]">
+      <div>
         <Navbar />
         <HeroSection />
         <SkillsSection />
