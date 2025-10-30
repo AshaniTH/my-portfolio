@@ -357,7 +357,7 @@ const HeroSection = () => {
                             isDarkMode ? "border-gray-700 hover:border-gray-600 text-gray-300"
                             :"border-gray-300 hover:border-gray-400 text-gray-700"
 
-                        }px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
+                        } px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
 
                         >
                             Get in Touch
