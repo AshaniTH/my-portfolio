@@ -185,7 +185,7 @@ const HeroSection = () => {
                     variants={itemVariants}
                     className = {`text-base md:text-lg ${
                         isDarkMode ? "text-gray-400" : "text-gray-600"
-                    }mb-8 max-w-xl mx-auto font-light leading-relaxed`}
+                    } mb-8 max-w-xl mx-auto font-light leading-relaxed`}
                     >
                         I craft beautiful, functional web applications with modern
                         technologies and through user experiences.
