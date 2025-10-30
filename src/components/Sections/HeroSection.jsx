@@ -316,16 +316,16 @@ const HeroSection = () => {
 
                     >
                         <span
-                        className={`${isDarkMode ? "text-white" : "text-gray-900"}`}>
-                            Building digital
+                        className={`${isDarkMode ? "text-white" : "text-gray-900"} font-extrabold`}>
+                            Hi! I'm
                         </span>
                         <br />
-                        <span className ="text-blue-500 font-medium">
-                            experiences
+                        <span className ="text-blue-500 font-extrabold">
+                            Ashani
                         </span>
                         <br/>
-                        <span className = {isDarkMode ? "text-white" : "text-gray-900"}>
-                            that matter
+                        <span className = {`${isDarkMode ? "text-white" : "text-gray-900"} font-extrabold`}>
+                            Tharukshi
 
                         </span>
 
