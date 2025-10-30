@@ -340,7 +340,7 @@ const HeroSection = () => {
 
                     </motion.p>
                     {/*Cta button desktop */}
-                    <motion.div variants = {itemVariants} className= "flex gap-6 mb-8">
+                    <motion.div variants = {itemVariants} className= "flex gap-6 mb-8 mt-8">
                         <motion.button
                         whileHover={{y:-2}}
                         whileTap = {{scale:0.98}}
@@ -360,7 +360,7 @@ const HeroSection = () => {
                         } px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
 
                         >
-                            Get in Touch
+                            Download CV
 
                         </motion.button>
 
