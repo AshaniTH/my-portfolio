@@ -215,7 +215,7 @@ const HeroSection = () => {
                             :"border-gray-300 hover:border-gray-400 text-gray-700"
                         } px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
                         >
-                            Get in Touch
+                            DOWNLOAD CV
 
                         </motion.button>
 
