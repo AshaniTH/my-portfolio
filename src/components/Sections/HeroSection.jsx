@@ -105,7 +105,7 @@ const HeroSection = () => {
             </div>
             <div className='max-w-7xl mx-auto w-full z-10 mt-20'>
                 {/* Mobile layout - centered*/}
-                <div className='block lg:hidden'>
+                <div className='block lg:hidden text-center'>
                     <motion.div
                     initial = "hidden"
                     animate = "visible"
@@ -175,7 +175,7 @@ const HeroSection = () => {
                         <span className="text-blue-500 font-extrabold ml-2">
                             Ashani
                         </span>
-                        <span className={`${isDarkMode ? "text-white" : "text-gray-900"} font-extrabold`}>
+                        <span className={`${isDarkMode ? "text-white" : "text-gray-900"} font-extrabold ml-2`}>
                             Tharukshi
                         </span>
 
@@ -307,7 +307,7 @@ const HeroSection = () => {
                     variants={textVariants}
                     className={`text-sm uppercase tracking-widest ${
                         isDarkMode ? "text-gray-500" : "text-gray-600"
-                    }mb-6`}
+                    } mb-6`}
                     >
                         Full Stack Developer
                     </motion.div>
@@ -334,7 +334,7 @@ const HeroSection = () => {
                     variants = {itemVariants}
                     className={`text-xl ${
                         isDarkMode ? "text-gray-400" : "text-gray-600"   
-                    }mb-12 font-light leading-relaxed max-w-lg`}
+                    } mb-12 font-light leading-relaxed max-w-lg`}
                     >
                         I craft beautiful, functional web application with modern technologies and thoughtful user experiences.
 
