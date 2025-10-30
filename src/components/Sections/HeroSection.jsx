@@ -349,10 +349,11 @@ const HeroSection = () => {
                         >
                             View Work
                         </motion.button>
-                        <motion.button
+                        <motion.a
+                        href="/resume.pdf"
+                        download
                         whileHover={{y:-2}}
                         whileTap={{scale:0.98}}
-                        onClick={()=>scrollToSection("contact")}
                         className={`border ${
                             isDarkMode ? "border-gray-700 hover:border-gray-600 text-gray-300"
                             :"border-gray-300 hover:border-gray-400 text-gray-700"
@@ -362,7 +363,7 @@ const HeroSection = () => {
                         >
                             Download CV
 
-                        </motion.button>
+                        </motion.a>
 
                     </motion.div>
                     {/*Social Links*/}
