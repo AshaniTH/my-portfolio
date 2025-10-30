@@ -167,15 +167,15 @@ const HeroSection = () => {
                     className="text-3xl md:text-5xl font-light mb-6 leading-tight"
                     >
                         <span
-                        className = {`${isDarkMode ? "text-white" : "text-gray-900"}`}
+                        className = {`${isDarkMode ? "text-white" : "text-gray-900"} font-extrabold`}
                         >
                             Hi! I'm
 
                         </span>
-                        <span className="text-blue-500 font-medium ml-2">
+                        <span className="text-blue-500 font-extrabold ml-2">
                             Ashani
                         </span>
-                        <span className={isDarkMode ? "text-white" : "text-gray-900"}>
+                        <span className={`${isDarkMode ? "text-white" : "text-gray-900"} font-extrabold`}>
                             Tharukshi
                         </span>
 
