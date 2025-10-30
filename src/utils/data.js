@@ -21,6 +21,10 @@ import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 //import project images 
 import PROJECT_IMG_1 from "../assets/images/project-1.png";
+import PROJECT_IMG_2 from "../assets/images/project-2.png";
+import PROJECT_IMG_3 from "../assets/images/project-3.png"; 
+import PROJECT_IMG_4 from "../assets/images/project-4.png";
+
 
 export const SKILLS_CATEGORY =[
     {
@@ -118,7 +122,7 @@ export const PROJECTS = [
         id:2,
         title:"Project Two",
         description:"A brief description of Project Two highlighting its features and technologies used.",  
-        image: PROJECT_IMG_1,
+        image: PROJECT_IMG_2,
         tags: ["HTML", "CSS", "JavaScript"],
         liveUrl:"#",
         githubUrl:"#",
@@ -130,7 +134,7 @@ export const PROJECTS = [
         id:3,
         title:"Project One",
         description:"A brief description of Project One highlighting its features and technologies used.",
-        image: PROJECT_IMG_1,
+        image: PROJECT_IMG_3,
         tags: ["React", "Node.js", "MongoDB"],
         liveUrl:"#",
         githubUrl:"#",
@@ -142,7 +146,7 @@ export const PROJECTS = [
         id:4,
         title:"Project Three",
         description:"A brief description of Project Three highlighting its features and technologies used.",
-        image: PROJECT_IMG_1,
+        image: PROJECT_IMG_4,
         tags: ["React", "Node.js", "MongoDB"],
         liveUrl:"#",
         githubUrl:"#",
