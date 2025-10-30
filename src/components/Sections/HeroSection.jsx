@@ -169,14 +169,14 @@ const HeroSection = () => {
                         <span
                         className = {`${isDarkMode ? "text-white" : "text-gray-900"}`}
                         >
-                            Building digital
+                            Hi! I'm
 
                         </span>
                         <span className="text-blue-500 font-medium ml-2">
-                            experiences
+                            Ashani
                         </span>
                         <span className={isDarkMode ? "text-white" : "text-gray-900"}>
-                            that matter
+                            Tharukshi
                         </span>
 
                     </motion.h1>
