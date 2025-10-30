@@ -297,7 +297,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Desktop layout - Split */}
-                <div className='hidden lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center'>
+                <div className='hidden lg:grid lg:grid-cols-2 ml-7 mr-7 lg:gap-14 lg:items-center'>
                     {/*Left Colum- Content*/}
                     <motion.div
                     initial="hidden"
@@ -411,7 +411,7 @@ const HeroSection = () => {
                         {/*Tech Stack -Desktop*/}
                         <motion.div
                         variants={itemVariants}
-                        className="flex items-center space-x-8 text-xs uppercase tracking-widest absolute -top-16 -left-20 "
+                        className="flex items-center space-x-5 text-xs uppercase tracking-widest absolute -top-16 -left-14 "
                         >
                             <span
                             className ={isDarkMode ? "text-gray-600" :"text-gray-500"}>
@@ -459,7 +459,7 @@ const HeroSection = () => {
                         whileHover = {{scale:1.02}}
                         className={`w-80 h-96 rounded-3xl overflow-hidden border-4 ${
                             isDarkMode ? "border-gray-800 " : "border-gray-300"
-                        }shadow-2xl`}
+                        } shadow-2xl`}
                         >
                             <img
                             src = {PROFILE_PIC}
