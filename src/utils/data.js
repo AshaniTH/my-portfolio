@@ -24,6 +24,10 @@ import PROJECT_IMG_1 from "../assets/images/project-1.png";
 import PROJECT_IMG_2 from "../assets/images/project-2.png";
 import PROJECT_IMG_3 from "../assets/images/project-3.png"; 
 import PROJECT_IMG_4 from "../assets/images/project-4.png";
+import PROJECT_IMG_5 from "../assets/images/project-5.png";
+import PROJECT_IMG_6 from "../assets/images/project-6.png";
+import PROJECT_IMG_7 from "../assets/images/project-7.png";
+
 
 
 export const SKILLS_CATEGORY =[
@@ -158,7 +162,7 @@ export const PROJECTS = [
         id:5,
         title:"Project One",
         description:"A brief description of Project One highlighting its features and technologies used.",
-        image: PROJECT_IMG_1,
+        image: PROJECT_IMG_5,
         tags: ["React", "Node.js", "MongoDB"],
         liveUrl:"#",
         githubUrl:"#",
@@ -170,7 +174,19 @@ export const PROJECTS = [
         id:6,
         title:"Project One",
         description:"A brief description of Project One highlighting its features and technologies used.",
-        image: PROJECT_IMG_1,
+        image: PROJECT_IMG_6,
+        tags: ["React", "Node.js", "MongoDB"],
+        liveUrl:"#",
+        githubUrl:"#",
+        featured:false,
+        category:"Web Development",
+        
+    },
+     {
+        id:7,
+        title:"Project One",
+        description:"A brief description of Project One highlighting its features and technologies used.",
+        image: PROJECT_IMG_7,
         tags: ["React", "Node.js", "MongoDB"],
         liveUrl:"#",
         githubUrl:"#",
@@ -192,15 +208,15 @@ export const JOURNEY_STEPS = [
         year:"2019",
         title:"GCE Advanced level examination",
         Company:"CWW Kannangara college mathugama",
-        description:"Completed GCE A/L with 3A's",
+        description:"Completed GCE A/L with 1B & 2C's",
         icon:GraduationCap,
         color:"bg-green-500",
     },
     {
         year:"2020",
         title:"Bachelor of Science (Honours) in Computing and Information Systems",
-        Company:"Sri Lanka Institute of Information Technology (SLIIT)",
-        description:"Specialized in Software Engineering",
+        Company:"Sabaragamuwa University of Sri Lanka",
+        description:"Reading",
         icon:GraduationCap,
         color:"bg-purple-500",},
 
