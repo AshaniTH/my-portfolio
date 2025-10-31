@@ -104,9 +104,9 @@ export const TECH_STACK =[
 
 export const STATS =[
     {number:"10+", label:"Projects Completed"},
-    {number:"3", label:"Years of Experience"},
+    {number:"1", label:"Years of Experience"},
     {number:"5", label:"Technologies Mastered"},
-    {number:"2", label:"Certifications Earned"},
+    {number:"10+", label:"Certifications Earned"},
 ];
 
 export const PROJECTS = [
@@ -205,7 +205,7 @@ export const JOURNEY_STEPS = [
         color:"bg-blue-500",
     },
     {
-        year:"2019",
+        year:"2021",
         title:"GCE Advanced level examination",
         Company:"CWW Kannangara college mathugama",
         description:"Completed GCE A/L with 1B & 2C's",
@@ -213,7 +213,7 @@ export const JOURNEY_STEPS = [
         color:"bg-green-500",
     },
     {
-        year:"2020",
+        year:"2023",
         title:"Bachelor of Science (Honours) in Computing and Information Systems",
         Company:"Sabaragamuwa University of Sri Lanka",
         description:"Reading",
@@ -245,21 +245,21 @@ export const SOCIAL_LINKS = [
     {
         name:"GitHub",
         icon:FiGithub,
-        url:"#",
+        url:"https://github.com/AshaniTH",
         color:"hover:text-gray-400",
         bgColor:"hover:bg-gray-900",
     },
     {
-        name:"Linkdin",
+        name:"LinkedIn",
         icon:FiLinkedin,
-        url:"#",
+        url:"https://www.linkedin.com/in/ashani-tharukshi-03955a2a7/",
         color:"hover:text-blue-400",
         bgColor:"hover:bg-blue-500/10",
     },
     {
         name:"Email",
         icon:Mail,
-        url:"#",
+        url:"mailto:ashanitharukshi2002@gmail.com",
         color:"hover:text-red-400",
         bgColor:"hover:bg-red-500/10",
     },
