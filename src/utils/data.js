@@ -141,7 +141,7 @@ export const PROJECTS = [
         image: PROJECT_IMG_3,
         tags: ["Flutter","Firebase"],
         liveUrl:"#",
-        githubUrl:"#",
+        githubUrl:"https://github.com/AshaniTH/Vet_Assist",
         featured:false,
         category:"Mobile App Development",
         
@@ -151,7 +151,7 @@ export const PROJECTS = [
         title:"Project Three",
         description:"A brief description of Project Three highlighting its features and technologies used.",
         image: PROJECT_IMG_4,
-        tags: ["React", "Node.js", "MongoDB"],
+        tags: ["React", "Node.js", "Express", "MongoDB"],
         liveUrl:"#",
         githubUrl:"#",
         featured:false,
