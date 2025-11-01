@@ -136,14 +136,14 @@ export const PROJECTS = [
     },
        {
         id:3,
-        title:"Project One",
-        description:"A brief description of Project One highlighting its features and technologies used.",
+        title:"Project Three",
+        description:"A brief description of Project Three highlighting its features and technologies used.",
         image: PROJECT_IMG_3,
-        tags: ["React", "Node.js", "MongoDB"],
+        tags: ["Flutter","Firebase"],
         liveUrl:"#",
         githubUrl:"#",
         featured:false,
-        category:"Web Development",
+        category:"Mobile App Development",
         
     },
        {
