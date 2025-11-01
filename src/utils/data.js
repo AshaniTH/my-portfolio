@@ -115,7 +115,7 @@ export const PROJECTS = [
         title:"Project One",
         description:"A brief description of Project One highlighting its features and technologies used.",
         image: PROJECT_IMG_1,
-        tags: ["React", "Node.js", "MongoDB"],
+        tags: ["HTML", "CSS"],
         liveUrl:"#",
         githubUrl:"#",
         featured:false,
