@@ -117,7 +117,7 @@ export const PROJECTS = [
         image: PROJECT_IMG_1,
         tags: ["HTML", "CSS"],
         liveUrl:"#",
-        githubUrl:"#",
+        githubUrl:"https://github.com/AshaniTH/travelLK",
         featured:false,
         category:"Web Development",
         
