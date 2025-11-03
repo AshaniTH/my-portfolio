@@ -34,19 +34,40 @@ const ContactSection = () => {
 
         });
     };
-    const handleSubmit = async(e) => {
+    // Submit form to Formspree. Replace YOUR_FORM_ID with your Formspree form ID.
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        //Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        setIsSubmitting(false);
-        setShowSuccess(true);
-        setFormData({name:"", email:"", message:""});
+        try {
+            const response = await fetch("https://formspree.io/f/xanlgjzy", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    message: formData.message,
+                }),
+            });
 
-        //Auto hide success model after 3 seconds
-        setTimeout(() => setShowSuccess(false), 3000);
-
+            if (response.ok) {
+                // show success modal (reuses existing UI)
+                setShowSuccess(true);
+                setFormData({ name: "", email: "", message: "" });
+                // auto-hide after 3s
+                setTimeout(() => setShowSuccess(false), 3000);
+            } else {
+                // optional: read response for debugging
+                const data = await response.json().catch(() => null);
+                console.error("Formspree error:", data);
+                alert(" Failed to send message. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert(" An error occurred. Please try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
   return (
