@@ -143,7 +143,7 @@ const AboutSection = () => {
                         <p className={`text-base leading-relaxed ${
                             isDarkMode ? "text-gray-400" : "text-gray-600"
                         }`}>
-                            When I'm not coding, you'll find me exploring new frameworks, contributing to open source, or mentoring aspiring developers. I love the constant evolution of web technologies and the endless possibilities they bring to create meaningful digital experiences.
+                           I’m currently seeking an internship opportunity where I can apply my web development skills, collaborate on real-world projects, and continue growing as a passionate and dedicated software engineer.
 
                         </p>
 
