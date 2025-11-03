@@ -20,16 +20,16 @@ const Footer = () => {
 
   },
   {
-    name:'Linkdin',
+    name:'LinkedIn',
     icon:FiLinkedin,
-    url:"https://github.com/AshaniTH",
+    url:"https://www.linkedin.com/in/ashani-tharukshi-03955a2a7/",
     color:"hover:text-blue-400"
 
   },
   {
     name:'Email',
     icon:Mail,
-    url:"mailto:ashanitharukshi2002@gmail.com",
+    url: "mailto:ashanitharukshi@gmail.com",
     color:"hover:text-green-400"
 
   }
@@ -43,7 +43,7 @@ const scrollToTop =() =>{
 const AnimatedGradientLine = ()=>(
   <div className="absolute top-0 left-0 w-full h-px overflow-hidden">
     <motion.div
-    className={`h-px bg-gradient-to-r ${
+    className={`h-px bg-linear-to-r ${
       isDarkMode ? "from-transparent via-blue-500 to-transparent"
       :"from-transparent via-blue-600 to-transparent"}`}
       initial={{width:'0%', opacity:0}}
@@ -52,11 +52,11 @@ const AnimatedGradientLine = ()=>(
     >
 
     </motion.div>
-    <motion.div 
-    className= {`absolute top-0 h-px w-32 bg-gradient-to-r ${
-      isDarkMode?"from-blue-400 via-purple-500 to-blue-400"
-      :"from-blue-500 via-purple-600 to-blue-500"
-    }blur-sm`}
+    <motion.div
+    className={`absolute top-0 h-px w-32 bg-linear-to-r ${
+      isDarkMode ? "from-blue-400 via-purple-500 to-blue-400"
+      : "from-blue-500 via-purple-600 to-blue-500"
+    } blur-sm`}
     animate={{
       x: ['-50%', 'calc(100vw + 50%)'],
 
@@ -139,7 +139,7 @@ className='absolute inset-0 overflow-hidden pointer-events-none'
           <motion.a
           key={social.name}
           href={social.url}
-          target="blank"
+          target="_blank"
           rel="noopener noreferrer"
           className={`p-3 rounded-full transition-all duration-300 ${
             isDarkMode ? "bg-gray-800/50 hover:bg-gray-700/50"
