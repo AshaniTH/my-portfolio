@@ -352,7 +352,7 @@ const HeroSection = () => {
                             View Work
                         </motion.button>
                         <motion.a
-                        href="/resume.pdf"
+                        href="/Ashani Tharukshi.pdf"
                         download
                         whileHover={{y:-2}}
                         whileTap={{scale:0.98}}
